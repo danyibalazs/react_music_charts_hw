@@ -1,0 +1,13 @@
+.song {
+  border: 1px solid black;
+  margin: 1em;
+}
+
+.position {
+  background-color: dodgerblue;
+  margin: 0;
+}
+
+.position h2 {
+  margin: 0;
+}
