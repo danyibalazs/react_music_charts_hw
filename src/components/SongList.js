@@ -1,14 +1,23 @@
 import React from 'react';
+import Song from './Song';
 
-const SongList = (props) => {
+const SongList = ({songs}) => {
 
-  // const songNodes = props.songs.map(song => {
-  
-  // })
+  const songNodes = songs.map((song, index) => {
+    const position = index + 1;
+    const title = song["im:name"].label;
+    const artist = song["im:artist"].label;
+     return <Song 
+      position={position}
+      title={title}
+      artist={artist}
+      key={index}
+      />
+  })
 
   return (
     <div>
-
+      {songNodes}
     </div>
   )
 }
